@@ -1,26 +1,26 @@
 package sample;
 
-import org.junit.Test;
+import junit.framework.TestCase;
 
-import static org.junit.Assert.assertEquals;
+public class CalculatorTest extends TestCase {
 
-public class CalculatorTest {
-
-    @Test
-    public void sumar() {
+    public void testSumar() {
         Calculator calculator = new Calculator();
-        assertEquals((2 + 2), calculator.sumar(2, 2));
+        assertEquals(2, calculator.sumar(1, 1));
     }
 
-    @Test
-    public void restar() {
+    public void testRestar() {
+        Calculator calculator = new Calculator();
+        assertEquals(1, calculator.restar(2, 1));
     }
 
-    @Test
-    public void multiplicar() {
+    public void testMultiplicar() {
+        Calculator calculator = new Calculator();
+        assertEquals(1, calculator.multiplicar(1, 1));
     }
 
-    @Test
-    public void dividir() {
+    public void testDividir() {
+        Calculator calculator = new Calculator();
+        assertEquals(1, calculator.dividir(1, 1));
     }
 }
