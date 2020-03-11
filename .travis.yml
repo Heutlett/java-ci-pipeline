@@ -1,1 +1,5 @@
-language: java
+language:
+  java
+script:
+  - ant dist
+  - sonar-scanner
