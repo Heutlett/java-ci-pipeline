@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
@@ -13,8 +14,23 @@
    <children>
       <Pane prefHeight="300.0" prefWidth="371.0">
          <children>
-            <Button fx:id="button" layoutX="48.0" layoutY="66.0" mnemonicParsing="false" onAction="#buttonAction" text="Button" />
-            <Button layoutX="74.0" layoutY="106.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="buttonSuma" layoutX="31.0" layoutY="236.0" mnemonicParsing="false" onAction="#buttonSumaAction" text="Sumar" />
+            <Button fx:id="buttonResta" layoutX="110.0" layoutY="236.0" mnemonicParsing="false" onAction="#buttonRestaAction" text="Restar" />
+            <Button fx:id="buttonMultiplicacion" layoutX="186.0" layoutY="236.0" mnemonicParsing="false" onAction="#buttonMultiplicacionAction" text="Multiplicar" />
+            <Button fx:id="buttonDividir" layoutX="276.0" layoutY="236.0" mnemonicParsing="false" onAction="#buttonDivisionAction" text="Dividir" />
+            <TextField fx:id="texto1" layoutX="105.0" layoutY="86.0" />
+            <TextField fx:id="texto2" layoutX="105.0" layoutY="138.0" />
+            <TextField fx:id="resultado" editable="false" layoutX="105.0" layoutY="190.0" />
+            <Label layoutX="29.0" layoutY="194.0" text="Resultado" />
+            <Label layoutX="29.0" layoutY="142.0" prefHeight="17.0" prefWidth="19.0" text="n2" />
+            <Label layoutX="29.0" layoutY="90.0" prefHeight="17.0" prefWidth="19.0" text="n1" />
+            <Label layoutX="135.0" layoutY="115.0" text="+      -        *      /" />
+            <Label layoutX="175.0" layoutY="166.0" text="=" />
+            <Label layoutX="23.0" layoutY="14.0" text="Calculadora simple">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>
