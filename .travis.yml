@@ -3,10 +3,12 @@ language:
 
 addons:
   sonarcloud:
-    organization: "Heutlett_java-ci-pipeline"
+    organization: "actividad-pipeline"
     token:
-      secure: "ypMSAcmBEswAqq9eGH2MS0UiTHjPa8J4RWHfV0r/NePIkOyD56hIzsCqwVGJ+xxn7kHmtKPWLvvDz7Jzft0q0r2BBBokHNHfxZD1ltEiKz0I/AZ7OJau1V9I72mjkICLzydma5TuauOKox/e75sqTZmIOKdS4gY6O4xf9BOosE5YS+TRRjlB7qzSETxWgDgVkmA5Vvn3zLfegmwKcOeTNRkFgXERHF7la6UwteSWkS+FFYFIpSyjMglID3+P35yApEnET+f2XDfin/I2qw44Ix1zQ5+Qats7a8GMzb3ltyev/RSJoP35rHGOJZWlZcnvdw9k5M1DXoJjau/V7METn0OPLr6x2INa+K1z72KGXbmYpaCEdLk3f2i4NDw04JNd3zqCi4QAe0DE5vzEQ4OzIqGO8shIg81Wb/RyydwXlvSnEriLaVvXLAYuFPgCbk2rdjdDpVAq3Sb7xByOwo6kzVinTDQTRnbyBbsBYkHwkF7K6xfuT7FISCXq0w8NtRO/4lFnpffXTt7gk879xodrvJ2ZlLCYJiVSOGabYx0/QWsUtr98JISR7ckbZXD/FjOnshe1K5EWxzzjaTmmZJj+j5xX5wGVy6xOllen4eUXK1zPQTxadJHM3eImi8XewqTWYYjtrzWcuMJ8uv+e3IO94VnsVv7fp1Chc/WCYUd0FIM="
+      secure: "YFuX0bwx66VF+t5UjvC3drZzlCVfopumazb5OEvOmQXDFxEfPUkBVHi22+w1SJxKZN8lvqHHJqKlkZI6BYp6jEERJo/4mhLB1qDKoVCrf6MZaQFtXgjX9P3k8rxuJeFJygRjqQUYQif1TWfpZQczpfIvkE/B2AxhCGFmfUR0DBL3HkkJadTCtH6ChLp1z3cVfgjIVbjhy7wyETIRdlcMX2AIsGGkzo0MmzCzdUDWo0lhMtNyU+Jtj1LNan7pyzcE0GW37GnvpFcxzp/QHJAEr2BU4p9wcQdVSnm8b+6v7hnsTAL6iOitHWDFH51na1h2M1OEmwr8qgHw/gueKlUPQib7FI4grfV2SyzyC6wtdbDUUyWthPQlVw+X2ulc0jskv+kq1DfPZOgvefWnm0aMUylcYmMmOBadcCsBklmJlaUnb/2oMwgmiZhZWH3kq02Nd2NUj/XNGnMfiH6hLNgAwuEaIjf9s+O+uOVpbcHGMcc2u0jUsBVQgKEQXpHzBcZbqHeQ1XF0GrE3ACQxv4AWJv+a3DxH2KshxDsBlXc/agdczBlbIU2y6jpfDYVGUUmpcH53vWCrOditg/xTZBGDVA11rn3eVd5sBVsqgnVwPUop7ym/QW9L4c07V6zx3veA3Psh7nv/XEUfdXnfDj4cJZQTIYBs7Ipo+YMlN3NaIGY="
+
 script:
-  # other script steps might be done before running the actual analysis
-  - sonar-scanner
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
   - ant dist
+  - sonar-scanner
+
