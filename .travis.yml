@@ -3,7 +3,7 @@ language:
 
 addons:
   sonarcloud:
-    organization: "actividad-pipeline"
+    organization: "Heutlett_java-ci-pipeline"
     token:
       secure: "50ade4a6184d04f33f2f0ccfa0cc2f8cfe1aaa13"
 script:
