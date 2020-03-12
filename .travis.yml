@@ -1,12 +1,6 @@
 language:
   java
 
-addons:
-  sonarcloud:
-    organization: "1234" # the key of the org you chose at step #3
-    token:
-      secure: "*********" # encrypted value of your token
 script:
-  # other script steps might be done before running the actual analysis
+
   - ant dist
-  - sonar-scanner
