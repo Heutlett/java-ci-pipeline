@@ -3,9 +3,9 @@ language:
 
 addons:
   sonarcloud:
-    organization: "Heutlett"
+    organization: "actividad-pipeline"
     token:
-      secure: "c689ba0b89c210d388da423322ccbd5a090dcdd3"
+      secure: "50ade4a6184d04f33f2f0ccfa0cc2f8cfe1aaa13"
 script:
   # other script steps might be done before running the actual analysis
   - sonar-scanner
