@@ -5,7 +5,7 @@ addons:
   sonarcloud:
     organization: "Heutlett"
     token:
-      secure: "IeaBMWwJ8libWpMv00I7lNspd29vRhyd8qWTgcKRBBZe6lNtHHk91tcFsu5L4AtckfuptL1yQvnNwD9kZpC6cZf4RGLIx9Ab0pG0zFehkFVkOgzlpRGCCIF/H9hwwDoQO5hgzZbjs0XLpMDYWrkGLn5EoejbCIIdQfO0UWUD6qp4La+7bJowWVJdnjBOOjoW+gLFBUKBL8oiwxONZ7fsTrawS5+32/LYwvws7AbBK7U7/aiizPL2/ID++ZttIhU8nADQqaY5xl7Z35zzfJG4LFa2HJeFCQEmY86dqBl54KrlB2bBc3Te094QZjfYv6JHKPXE3yjA1seyepvHp7lu+SPqTXGDma4Z4XNMGIJ9hBABGCcHL7I2HRUBRyFBvJpndL54cnJmiPW2e/iqdEOBmriz5oIkSzJr4ZCAla0JR+LzSuYd/5JHu4A8MUQ1IDAELwwgcGVkP92Ue6YR+XTPICcww8NEH9lb3M/Xt+gTE0+IB2LZHiu2L6oj/l26te3jUWJC+X3o2jy7S2L/SblRdxK1D0+F3iW4/vHXKhhZOU8Gfpil89yQw6PER28UY8bqJYw7mFg8FLHtGaZeNYFlyY0vdvVJKHMtLl361nZvhFQE6eM9hRYjDwBbwfIXeRDw6+yoqvHXpzQ4PjxoqsX0nRrQgUXtohnf6i3VOWW3I44="
+      secure: "c689ba0b89c210d388da423322ccbd5a090dcdd3"
 script:
   # other script steps might be done before running the actual analysis
   - sonar-scanner
